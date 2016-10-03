@@ -24,7 +24,8 @@ class Dog(Pet):
 class BigDog(Dog):
     # Create an __init__ function to set the description
     # class attribute not instance attribute
-    description = "A large, muscular dog"
+    def __init__(self):
+        self.description = "A large, muscular dog"
 
     # Create the speak method here
     def speak(self):
